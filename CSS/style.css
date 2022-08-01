@@ -375,7 +375,7 @@ input:checked+.toy-toggle .handle-on {
 }
 
 .tags {
-  color: #B2B1B9;
+  color: #b2b1b949;
   position: absolute;
   top: 100px;
   left: 3rem;
@@ -392,7 +392,7 @@ input:checked+.toy-toggle .handle-on {
 .top-tags:after {
   content: "<body>";
   font-family: 'La Belle Aurore', cursive;
-  color: #B2B1B9;
+  color: #b2b1b949;
   font-size: 1rem;
   position: absolute;
   margin-left: 0.7rem;
@@ -406,7 +406,7 @@ input:checked+.toy-toggle .handle-on {
 .welcome::before {
   content: "<h1>";
   font-family: 'La Belle Aurore', cursive;
-  color: #B2B1B9;
+  color: #b2b1b949;
   font-size: 1rem;
   position: absolute;
   /* left: -20px; */
@@ -418,12 +418,12 @@ input:checked+.toy-toggle .handle-on {
 .welcome::after {
   content: "</h1>";
   font-family: 'La Belle Aurore', cursive;
-  color: #B2B1B9;
+  color: #b2b1b949;
   font-size: 1rem;
   position: absolute;
   margin-left: -9.5rem;
   bottom: -10rem;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .name {
@@ -447,7 +447,7 @@ input:checked+.toy-toggle .handle-on {
 .intro::before {
   content: "<p>";
   font-family: 'La Belle Aurore', cursive;
-  color: #B2B1B9;
+  color: #b2b1b949;
   font-size: 1rem;
   position: absolute;
   margin-left: -1rem;
@@ -457,30 +457,32 @@ input:checked+.toy-toggle .handle-on {
 .intro::after {
   content: "</p>";
   font-family: 'La Belle Aurore', cursive;
-  color: #B2B1B9;
+  color: #b2b1b949;
   font-size: 1rem;
   position: absolute;
   margin-left: -8rem;
-  bottom: -2rem;
+  bottom: -1.5rem;
 }
 
 .talk {
-  width: 100px;
-  height: 40px;
+  display: inline-block;
   margin: 50px 0 0 35px;
-  border: none;
-  border-radius: 7px;
-  /* box-shadow: 0 30px 30px -15px #E6AF2E; */
-  box-shadow: 0 0 5px #E6AF2E, 0 0 25px #E6AF2E, 0 0 50px #E6AF2E, 0 0 200px #E6AF2E;
-  /* box-shadow: 0 0 10px #E6AF2E, 0 0 10px #E6AF2E, 0 0 10px #E6AF2E, 0 0 10px #E6AF2E; */
+  padding: 10px;
+  border-radius: 10px;
   background-color: #E6AF2E;
   text-decoration: none;
   font-size: 1.1rem;
   color: #fff;
 }
 
+.talk:hover {
+  /* box-shadow: 0 30px 30px -15px #E6AF2E; */
+  box-shadow: 0 0 5px #E6AF2E, 0 0 25px #E6AF2E, 0 0 50px #E6AF2E, 0 0 200px #E6AF2E;
+  /* box-shadow: 0 0 10px #E6AF2E, 0 0 10px #E6AF2E, 0 0 10px #E6AF2E, 0 0 10px #E6AF2E; */
+}
+
 .hero-social {
-  width: 75%;
+  width: 80%;
   height: 30%;
   margin: 70px 0 0 35px;
   display: flex;
@@ -534,7 +536,6 @@ input:checked+.toy-toggle .handle-on {
 
 .social-link .icon {
   position: relative;
-  padding: 15px;
   margin: 10px;
   height: 50px;
   font-size: 0.9rem;
@@ -769,15 +770,19 @@ lord-icon {
 
 .face2 {
   position: relative;
-  /* background-color: #151515; */
-  display: flex;
+  /*background-color: #151515;
+  */display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 5px 5px 15px #101010;
-  /* box-shadow: 0px 0px 15px #101010; */
-  transform: translateY(-130px);
+  /*box-shadow: 0px 0px 15px #101010;
+  */transform: translateY(-130px);
+  -webkit-transform: translateY(-130px);
+  -moz-transform: translateY(-130px);
+  -ms-transform: translateY(-130px);
+  -o-transform: translateY(-130px);
 }
 
 .service-box:hover .face2 {
@@ -921,7 +926,6 @@ iframe {
 .slider [class*="box"]:nth-child(4) {
   width: 60vw;
   height: 80vh;
-  background-color: #c92026;
   color: #fff;
   transform: scale(1) translate(-50%, -50%);
   top: 50%;
@@ -967,7 +971,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px 0 35px 0;
+  margin-top: 60px;
 }
 
 .testimonial-box {
@@ -1013,6 +1017,25 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.bottom-tags {
+  font-family: 'La Belle Aurore', cursive;
+  color: #b2b1b949;
+  font-size: 1rem;
+  position: absolute;
+  margin-left: -2rem;
+  padding-bottom: 10px;
+}
+
+#testimonials .bottom-tags::after {
+  display: block;
+  content: "</html>";
+  font-family: 'La Belle Aurore', cursive;
+  color: #b2b1b949;
+  font-size: 1rem;
+  position: absolute;
+  margin-left: -1rem;
 }
 
 @media only screen and (max-width: 871px) {}
