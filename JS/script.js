@@ -68,4 +68,4 @@ function rotate() {
 
 window.setInterval(function(){
    rotate()
- }, 5000);
+ }, 7000);
